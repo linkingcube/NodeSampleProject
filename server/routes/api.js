@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Poll = require('./../database/poll')
+var Poll = require('./../database/poll');
 
 /*var poll = new Poll({
     question: "what kind of fruit do you like?",
