@@ -1,0 +1,28 @@
+{
+  "name": "node_sample_project_server",
+  "version": "1.0.0",
+  "description": "node js showcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkingcube/NodeSampleProject.git"
+  },
+  "keywords": [
+    "example",
+    "socketio",
+    "express"
+  ],
+  "author": "Bashar Alhalees",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linkingcube/NodeSampleProject/issues"
+  },
+  "homepage": "https://github.com/linkingcube/NodeSampleProject#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11"
+  }
+}
