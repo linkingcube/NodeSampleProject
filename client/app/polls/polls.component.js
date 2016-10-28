@@ -17,6 +17,17 @@ var PollsComponent = (function () {
     PollsComponent.prototype.ngOnInit = function () {
         this.polls = this.route.snapshot.data['polls'];
     };
+    PollsComponent.prototype.getOptionValue = function (poll, option) {
+        var total = 0;
+        for (var i = 0; i < poll.options.length; i++) {
+            total += poll.options[i].votes;
+        }
+        return (option.votes / total) * 100;
+    };
+    PollsComponent.prototype.voteFor = function (poll, option) {
+        option.votes++;
+        poll.voted = true;
+    };
     PollsComponent = __decorate([
         core_1.Component({
             selector: 'polls',

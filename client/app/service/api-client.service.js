@@ -17,7 +17,7 @@ var ApiClient = (function () {
     ApiClient.prototype.getAllPolls = function () {
         var _this = this;
         return new Promise(function (resolve) {
-            _this.http.get("/foo")
+            _this.http.get("/api")
                 .subscribe(function (response) { return resolve(response.json()); }, function (err) { return resolve(err.json()); });
         });
     };

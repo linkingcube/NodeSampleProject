@@ -12,7 +12,7 @@ export class ApiClient{
 	getAllPolls():Promise<any> 
 	{		
 		return new Promise<any>(resolve => {
-			this.http.get("/foo")
+			this.http.get("/api")
 				.subscribe(
 					response => resolve(response.json()),
 					err => resolve(err.json())
