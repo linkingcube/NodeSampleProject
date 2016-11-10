@@ -6,6 +6,10 @@
   "license": "ISC",
   "main": "index.html",
   "scripts": {
+    "clean" : "del /q dist",
+    "build" : " npm run clean && tsc",
+    "build_prod":"npm run build && browserify -s main app/main.js > dist/bundle.js && npm run minify",
+    "minify":"uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.min.js",
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
     "tsc": "tsc",
