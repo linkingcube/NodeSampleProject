@@ -1,5 +1,2 @@
 # NodeSampleProject
-NodeSampleProject
-
-A live example of this project here: 
-http://64.137.185.192/
+This example demonstrates the usage of web sockets and NoSQL databases. 
